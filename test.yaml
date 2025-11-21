@@ -4,8 +4,10 @@ bind-address: '*'
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
+ipv6: false
+
 dns:
-    enable: false
+    enable: true
     ipv6: false
     default-nameserver: [223.5.5.5, 119.29.29.29]
     fake-ip-range: 198.18.0.1/16
@@ -131,7 +133,7 @@ proxies:
     sni: bilibili.com
 proxy-groups:
     - { name: 优选, type: select, proxies: [自动选择, '香港1g-1x', '香港HKT1|1x', '台湾-hinet 1x', '台湾-eco 1x', '台湾-V01', '台湾Hinet', '新加坡', '日本 02', '动态-pqs', '日本-S02'] }
-    - { name: 自动选择, type: url-test, proxies: ['香港1g-1x', '香港HKT1|1x', '台湾-hinet 1x', '台湾-eco 1x', '台湾-V01', '台湾Hinet', '新加坡', '日本 02', '动态-pqs', '日本-S02'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 自动选择, type: url-test, proxies: ['香港1g-1x', '香港HKT1|1x', '台湾-hinet 1x', '台湾-eco 1x', '台湾-V01', '台湾Hinet', '新加坡', '日本 02', '动态-pqs', '日本-S02'], url: 'http://www.gstatic.com/generate_204', interval: 300 }
     - { name: Ai网站, type: select, proxies: ['台湾-hinet 1x', '台湾-eco 1x', '台湾-V01', '台湾Hinet', '新加坡', '日本 02', '动态-pqs', '日本-S02'] }
 rules:
     - 'IP-CIDR,210.16.183.52/32,DIRECT,no-resolve'
