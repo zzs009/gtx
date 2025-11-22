@@ -1,0 +1,115 @@
+  - name: '香港1g-1x'
+    type: trojan
+    server: ali.ty7.fun
+    port: 39210
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '香港HKT1|1x'
+    type: vmess
+    server: hkt.lajichang.xyz
+    port: 2052
+    cipher: auto
+    uuid: c6d33e4e-c01a-4ec0-82d3-c4c18f451e4c
+    alterId: 0
+    tls: false
+    network: ws
+    ws-opts:
+      path: /7e60be4f/
+      headers:
+        Host: hkt.lajichang.xyz
+    client-fingerprint: chrome
+  - name: '台湾-hinet 1x'
+    type: trojan
+    server: 8.163.1.25
+    port: 41811
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '台湾-eco 1x'
+    type: trojan
+    server: ali.ty7.fun
+    port: 51931
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '台湾-V01'
+    type: vmess
+    server: v93.nodemo.top
+    port: 1008
+    uuid: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: v93.nodemo.top
+    servername: v93.nodemo.top
+  - name: '台湾Hinet'
+    type: vless
+    server: kbgs.hinet.tw1.yydjc.top
+    port: 443
+    uuid: b527363c-efb8-4a3f-9209-cdeb18349afd
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: UtL1fZqK9sl2QQaS03BQnfYBAnH760eJ_4YzSR9RniM
+      short-id: 601a08ef
+    network: tcp
+    servername: s0.awsstatic.com
+  - name: '新加坡'
+    type: trojan
+    server: ali.ty7.fun
+    port: 42729
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '日本 02'
+    type: vless
+    server: hy11.hy2yydsapi.top
+    port: 8080
+    uuid: 9c23940e-efd8-4763-bfb5-54739b50893d
+    alterId: 0
+    cipher: auto
+    udp: true
+    flow: xtls-rprx-vision
+    tls: true
+    reality-opts:
+      public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8
+      short-id: 607e67b1
+    client-fingerprint: safari
+    network: tcp
+    servername: www.python.org
+  - name: '动态-pqs'
+    type: trojan
+    server: ali.ty7.fun
+    port: 32388
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
+  - name: '日本-S02'
+    type: ss
+    server: s2.nodemo.top
+    port: 1260
+    cipher: chacha20-ietf-poly1305
+    password: 7f49bd74-62d7-41fb-b32c-97e18a1aef49
+    udp: true
+  - name: '[trojan]\U0001F1EF\U0001F1F5-日本'
+    type: trojan
+    server: ali.ty7.fun
+    port: 22225
+    password: 00637334-047f-48e8-b659-f78c717fa7e9
+    udp: true
+    skip-cert-verify: true
+    sni: bilibili.com
